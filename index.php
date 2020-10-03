@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <h1>Main</h1>
-</head>
-<body>
-    
-</body>
-</html>
+<?php
+include 'includes/header.php';
+include 'includes/footer.php';
+?>

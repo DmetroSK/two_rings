@@ -1,0 +1,15 @@
+.grid-container {
+    display: grid;
+    grid: 100px / auto auto auto;
+    grid-gap: 10px;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+.grid-container>div {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+}

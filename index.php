@@ -1,7 +1,7 @@
 <?php
 include 'includes/header.php';
 ?>
-<link rel="stylesheet" href="css/home.css">
+<link rel="stylesheet" href="css/index.css">
 <title>Home</title>
 </head>
 <body>

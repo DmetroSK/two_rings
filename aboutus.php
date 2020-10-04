@@ -13,7 +13,7 @@ include 'includes/menu.php';
 </div>
 <div class="row">
  <div class="column">
- <h2>TWO RINGS</h2>
+ <h1>TWO RINGS</h1>
  </div>
  <div class="column">
 <p>We, Two Rings, bring you the most elegant wedding needs/requirements for your wedding, engagement, reception and homecoming.</p>
@@ -28,7 +28,7 @@ include 'includes/menu.php';
 </div>
 </div>
 <hr size= "5px" noshade color="black" />
-<h2 align="center"> Our Team </h2>
+<h1 align="center"> Our Team </h1>
 <div class="row">
 <div class="column">
     <figure>

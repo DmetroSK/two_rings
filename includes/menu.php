@@ -1,23 +1,15 @@
-<div class="topnav">
-    
-    <div id="nav-left">
-        <img src="img/logo.png" alt="logo" width="45%" height="40%">
-        </div>
+<header>
+<h3>Two Rings</h3>
+<nav>
+<ul class="nav_links">
+<li><a href="#home">Home</a></li>
+<li><a href="#aboutus">About Us</a></li>
+<li><a href="#services">Services</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#contact">Contact</a></li>
 
-    <div id="nav-center">  
-   <a class="active" href="#home">Home</a>
-   <a href="#aboutus">About Us</a>
-  <a href="#services">Services</a>
-  <a href="#gallery">Gallery</a>
-  <a href="#contact">Contact</a>
-   </div>
- 
-  
+</ul>
 
-    <div id="nav-right">
-    <a href="#login">Login</a>
-    </div>
-
-</div>
-
-
+</nav>
+<a class="cta" href=""><button>Login</button></a>
+</header>

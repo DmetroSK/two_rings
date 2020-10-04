@@ -15,7 +15,18 @@
     content: "";
     clear: both;
     display: table;
+    padding: 0px;
 }
 h2, h4, p{
     font-family: lucide grande , tahcma,verdana,arial,sens-serif;
+}
+.banner
+{
+   background-image: url(../img/images.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border: 5px solid #dedede;
+   height: 200px; 
+   
+   
 }

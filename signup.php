@@ -35,10 +35,10 @@ include 'includes/header.php';
                 <input type="email" class="textbox" id="txt_email" name="txt_email" placeholder="Email"/>
             </div>
             <div>
-                <input type="password" class="textbox" id="txt_uname" name="txt_pwd" placeholder="Password"/>
+                <input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
             </div>
             <div>
-                <input type="password" class="textbox" id="txt_uname" name="txt_pwd" placeholder="Confirm Password"/>
+                <input type="password" class="textbox" id="txt_confpwd" name="txt_confpwd" placeholder="Confirm Password"/>
             </div>
             <div>
                 <input type="checkbox" class="textbox" id="txt_agree" name="txt_agree" />I agree with the terms and conditions

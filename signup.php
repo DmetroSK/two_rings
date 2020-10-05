@@ -24,6 +24,8 @@ include 'includes/header.php';
             <p>Please complete to create your account</p>
             <div>
                 <input type="text" class="textbox" id="txt_fname" name="txt_fname" placeholder="Firstname" />
+            </div>
+            <div>
                 <input type="text" class="textbox" id="txt_lname" name="txt_lname" placeholder="Lastname" />
             </div>
             <div>
@@ -44,7 +46,7 @@ include 'includes/header.php';
 
             <div id="div_btn">
                 
-                <input type="button" value="Signups" name="but_submit" id="but_submit" />
+                <input type="button" value="Signup" name="but_submit" id="but_submit" />
             </div>
         </div>
     </form>

@@ -3,7 +3,7 @@ include 'includes/header.php';
 ?>
 
 <link rel="stylesheet" href="css/signup.css">
-<title>Signin</title>
+<title>Signup</title>
 </head>
 <body>
 
@@ -12,14 +12,14 @@ include 'includes/header.php';
 <div class="row">
 
   <div class="column">
-      <img src="img/img_signin.png" alt="Login">
+      <img src="img/img_signin.png" alt="signup">
   </div>
 
   <div class="column">
   <div class="container">
 
     <form method="post" action="">
-        <div id="div_login">
+        <div id="div_signup">
             <h1>Register</h1>
             <p>Please complete to create your account</p>
             <div>

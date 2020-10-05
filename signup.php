@@ -44,7 +44,7 @@ include 'includes/header.php';
 
             <div id="div_btn">
                 
-                <input type="button" value="Signup" name="but_submit" id="but_submit" />
+                <input type="button" value="Signups" name="but_submit" id="but_submit" />
             </div>
         </div>
     </form>

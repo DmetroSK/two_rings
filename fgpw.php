@@ -3,7 +3,7 @@ include 'includes/header.php';
 ?>
 
 <link rel="stylesheet" href="css/fgpw.css">
-<title>forgot email</title>
+<title>forgot password</title>
 </head>
 <body>
 

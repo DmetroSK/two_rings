@@ -19,6 +19,8 @@
 }
 h2, h4, p{
     font-family: lucide grande , tahcma,verdana,arial,sens-serif;
+    line-height: 15px;
+    font-size: 12px;
 }
 .banner
 {

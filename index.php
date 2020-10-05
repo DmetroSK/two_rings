@@ -10,6 +10,8 @@ include 'includes/header.php';
 include 'includes/menu.php';
 ?>
 
+<h1 style="text-align:center">Our services</h1>
+<img src="photoshome\1.jpg">
 
 <?php
 include 'includes/footer.php';

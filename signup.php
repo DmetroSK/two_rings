@@ -55,6 +55,21 @@ include 'includes/header.php';
 
 </div>
 
+<?php
+	if(isset($_POST['signB'])){
+
+	$sql = "INSERT INTO user (id,name,city) VALUES ('".$_POST['id']."','".$_POST['fn']."','".$_POST['city']."')";
+
+	$result = mysqli_query($connection,$sql);
+	if($result)
+echo"<script> alert('Registered Sucessfully') </script>";
+else
+echo"failed";
+
+}
+
+?>
+
 
 
 

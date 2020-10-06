@@ -12,7 +12,7 @@ include 'includes/header.php';
 <div class="row">
 
   <div class="column">
-      <img src="img/img_signin.png" alt="forgot">
+      <img src="img/img_fgpw.png" alt="forgot">
   </div>
 
   <div class="column">

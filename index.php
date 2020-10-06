@@ -11,7 +11,7 @@ include 'includes/menu.php';
 ?>
 
 <h1 style="text-align:center">Our services</h1>
-<img src="photoshome\1.jpg">
+<img src="img/img_home_slider.png">
 
 <?php
 include 'includes/footer.php';

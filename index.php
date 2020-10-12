@@ -34,6 +34,7 @@ include 'includes/menu.php';
 <br>
 <br>
 <h1 style="text-align:center">Our services</h1>
+<<<<<<< HEAD
 <!--<img src="photoshome\1.jpg">-->
 <br>
 
@@ -41,6 +42,9 @@ include 'includes/menu.php';
 
 <map name="mapped">
 <area shape = "rect" coords="820,2111,1504,2343" href="contact.php">
+=======
+<img src="img/img_home_slider.png">
+>>>>>>> 9b01f5129aa03648d7d517404eec0ebeef759b76
 
 <?php
 include 'includes/footer.php';

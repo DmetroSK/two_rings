@@ -1,0 +1,2 @@
+CREATE TABLE users (Id INT(3) AUTO_INCREMENT,Nic INT(12), Fname VARCHAR(50), Lname VARCHAR(50), Address VARCHAR(255), Tp int(10), Email VARCHAR(50), Password VARCHAR(15), PRIMARY KEY (Nic) );
+

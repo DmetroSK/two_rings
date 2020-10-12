@@ -32,31 +32,31 @@ include 'includes/menu.php';
 <div class="row">
 <div class="column">
     <figure>
-    <img src="" alt="our team" style="width:100%" />
+    <img src="img/avatar.png" alt="our team" style="width:100%" />
     <figcaption>Hiruja</figcaption>
     </figure>
 </div>
 <div class="column">
     <figure>
-    <img src="" alt="our team" style="width:100%" />
+    <img src="img/avatar.png" alt="our team" style="width:100%" />
     <figcaption>Malhara</figcaption>
     </figure>
 </div>
 <div class="column">
     <figure>
-    <img src="" alt="our team" style="width:100%" />
+    <img src="img/avatar.png" alt="our team" style="width:100%" />
     <figcaption>Kavinda</figcaption>
     </figure>
 </div>
 <div class="column">
     <figure>
-    <img src="" alt="our team" style="width:100%" />
+    <img src="img/avatar.png" alt="our team" style="width:100%" />
     <figcaption>Dulan</figcaption>
     </figure>
 </div>
 <div class="column">
     <figure>
-    <img src="" alt="our team" style="width:100%" />
+    <img src="img/avatar.png" alt="our team" style="width:100%" />
     <figcaption>Achini</figcaption>
     </figure>
 </div>

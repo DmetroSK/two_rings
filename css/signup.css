@@ -1,0 +1,72 @@
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+}
+/* Container */
+
+.column .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30%;
+}
+/* Signup */
+
+#div_signup {
+    width: 470px;
+    height: 270px;
+    margin: 0 auto;
+}
+
+#div_signup h1 {
+    margin-top: 0px;
+    font-weight: normal;
+    padding: 10px;
+    color: black;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#div_signup p {
+    margin-top: 0px;
+    font-weight: normal;
+    color: gray;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input {
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+#div_signup div {
+    clear: both;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#div_signup .textbox {
+    width: 96%;
+    padding: 7px;
+}
+
+#div_signup input[type=button] {
+    padding: 7px;
+    width: 100px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 2px;
+}
+
+#div_btn input {
+    align-items: center;
+    margin-left: 80px;
+    margin-top: 10px;
+}

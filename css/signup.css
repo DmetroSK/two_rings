@@ -1,44 +1,55 @@
-.row {
-    display: flex;
+* {
+    box-sizing: border-box;
+    max-height: 100vh;
 }
+
+
+/* Create two equal columns that floats next to each other */
 
 .column {
-    flex: 50%;
+    float: left;
+    width: 50%;
+    padding: 10px;
 }
-/* Container */
 
-.column .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 30%;
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
 }
-/* Signup */
+
+img {
+    width: 100%;
+    height: auto;
+}
 
 #div_signup {
-    width: 470px;
+    padding-top: 100px;
     height: 270px;
+    width: 470px;
     margin: 0 auto;
 }
 
 #div_signup h1 {
-    margin-top: 0px;
     font-weight: normal;
-    padding: 10px;
-    color: black;
     font-family: sans-serif;
     text-align: center;
 }
 
 #div_signup p {
-    margin-top: 0px;
+    margin-top: 20px;
     font-weight: normal;
     color: gray;
     font-family: sans-serif;
     text-align: center;
 }
 
-input {
+input,
+textarea {
+    font-family: sans-serif;
     border: 0;
     outline: 0;
     background: transparent;
@@ -56,7 +67,8 @@ input {
     padding: 7px;
 }
 
-#div_signup input[type=button] {
+#div_signup input[type=submit],
+input[type=reset] {
     padding: 7px;
     width: 100px;
     background-color: black;
@@ -65,8 +77,8 @@ input {
     border-radius: 2px;
 }
 
-#div_btn input {
-    align-items: center;
-    margin-left: 80px;
-    margin-top: 10px;
+.div_btn {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 20%;
 }

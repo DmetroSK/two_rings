@@ -1,64 +1,74 @@
 <?php
 include 'includes/header.php';
 ?>
-
 <link rel="stylesheet" href="css/signup.css">
+
 <title>Signup</title>
+
 </head>
 <body>
 
-<!-- Code Start -->
-
-<div class="row">
+<div class="container">
 
   <div class="column">
       <img src="img/img_signup.png" alt="signup">
   </div>
 
   <div class="column">
-  <div class="container">
+        
 
-    <form method="post" action="">
-        <div id="div_signup">
-            <h1>Register</h1>
-            <p>Please complete to create your account</p>
-            <div>
-                <input type="text" class="textbox" id="txt_fname" name="txt_fname" placeholder="Firstname" />
-            </div>
-            <div>
-                <input type="text" class="textbox" id="txt_lname" name="txt_lname" placeholder="Lastname" />
-            </div>
-            <div>
-                <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username"/>
-            </div>
-            <div>
-                <input type="email" class="textbox" id="txt_email" name="txt_email" placeholder="Email"/>
-            </div>
-            <div>
-                <input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
-            </div>
-            <div>
-                <input type="password" class="textbox" id="txt_confpwd" name="txt_confpwd" placeholder="Confirm Password"/>
-            </div>
-            <div>
-                <input type="checkbox" class="textbox" id="txt_agree" name="txt_agree" />I agree with the terms and conditions
-            </div>
+         <form name="user" method="post" action="" id="form">
+             <div id="div_signup">
+                   
+                <h1>Signup</h1>
+                    <p>Please complete to create your account</p>
+                    <div>
+                        <input type="text" class="textbox"  name="txt_fname" placeholder="Firstname" />
+                    </div>
+                    <div>
+                        <input type="text" class="textbox"  name="txt_lname" placeholder="Lastname" />
+                    </div>
+                    <div>
+                        <input type="text" class="textbox"  name="txt_nic" placeholder="NIC"/>
+                    </div>
+                    <div>
+                        <input type="text" class="textbox" name="txt_tp" placeholder="Contact Number"/>
+                    </div>
+                    <div>
+                    <textarea class="textbox"  name="txt_addr" placeholder="Address" rows="4" cols="50"></textarea>
+                    </div>
+                    <div>
+                        <input type="email" class="textbox"  name="txt_email" placeholder="Email"/>
+                    </div>
+                    <div>
+                        <input type="password" class="textbox"  name="txt_pwd" placeholder="Password"/>
+                    </div>
+                    <div>
+                        <input type="password" class="textbox"  name="txt_confpwd" placeholder="Confirm Password"/>
+                    </div>
+                 
+                    <div class="div_btn" style="margin-top:20px">
+                        
+                        <input type="submit" value="Signup" name="but_submit" class="btn" />
+                        &nbsp &nbsp &nbsp
+                        <input type="reset" value="Clear" name="but_submit" class="btn" />
+                    </div>
 
-            <div id="div_btn">
-                
-                <input type="button" value="Signup" name="but_submit" id="but_submit" />
-            </div>
-        </div>
-    </form>
+                 
+
+                </div>
+         </form>
 </div>
-  </div>
+    
 
 </div>
+
 
 <?php
-	if(isset($_POST['signB'])){
+	if(isset($_POST['Signup'])){
 
-	$sql = "INSERT INTO user (id,name,city) VALUES ('".$_POST['id']."','".$_POST['fn']."','".$_POST['city']."')";
+	$sql = "INSERT INTO user ( Id, Nic, Fname, Lname, Address, Tp, Email, Password ) VALUES ('1','".$_POST['txt_fname']."','".$_POST['txt_lname']."','".$_POST['txt_nic']."'
+    ,'".$_POST['txt_tp']."','".$_POST['txt_addr']."','".$_POST['txt_email']."','".$_POST['txt_pwd']."')";
 
 	$result = mysqli_query($connection,$sql);
 	if($result)
@@ -70,14 +80,5 @@ echo"failed";
 
 ?>
 
-
-
-
-
-
-
-
-
-<!-- Code End -->
 </body>
 </html>

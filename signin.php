@@ -55,7 +55,7 @@ include 'includes/header.php';
             </div>
             <div id="div_btn">
                 <input type="button" value="Login" name="but_submit" id="but_submit" /> &nbsp &nbsp
-                <input type="button" value="Signup" name="but_submit" id="but_submit" />
+                <input type="button" value="Signup" name="but_submit" id="but_submit" onclick="window.location='/tworings/signup.php';" />
             </div>
         </div>
     </form>

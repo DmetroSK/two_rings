@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/footer.css">
    <link rel="stylesheet" href="css/menu.css">
+   <link rel="stylesheet" href="css/style.css">
 
    <link href="favicon/favicon.ico" rel="icon" type="image/x-icon" />
 

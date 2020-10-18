@@ -1,57 +1,109 @@
 <?php
+
+
+if(isset($_POST['login'])){
+	loginUser();	
+}
+
+else if(isset($_POST['register'])){
+	saveUser();
+}
+
+
+
+        function connectDb($sql){
+			/* coonectDb function make the database connection */
+			   $con = mysqli_connect('localhost', 'root', '','tworings');
+			 		  
+			$result=   mysqli_query($con,$sql);
+			closeDb($con);
+			 
+			return $result;
+			  
+		}
+
+		function closeDb($con){
+			/* closeDb function close the database connection */
+			mysqli_close($con);
+			
+		}
+
+
+
+		function loginUser(){
+		
+			$email = $_POST['txt_email'];
+		   $pw = $_POST['txt_pwd'];
+		   
+		   $sql = "Select * from users where Email='$email' && Password='$pw'";
+		   $result = connectDb($sql);
+			
+		   $num=mysqli_num_rows($result);
+		   //echo "<script>alert('$num');</script>";
+		   if($num==1){
+		
+			
+				 if ($result->num_rows>0){
+			 while($row=$result->fetch_assoc())
+			 {
+			  $usertype=$row['ut'];
+			  $fname = $row['Fname'];
+			   }
+			   session_start();
+			   $_SESSION['Name']=$fname;
+			   
+		   if($usertype==0)
+		   {echo "<script>alert('Successfully Login $fname '); window.location = '../index.php';</script>";}
+		   else if ($usertype==1) 
+		   {echo "<script>alert('Successfully Login $fname'); window.location = '../admin/dashboard.php';</script>";}  
+		   else
+		   { {echo "<script>alert('Login Failed'); window.location = 'index.php';</script>";}
+		   
+		   }
+		   }
+		   }
+		   
+		   echo "<script>alert('Login Failed'); window.location = '../index.php';</script>";
+				
+		}
+
+
+
+		function saveUser(){
+		
+			$fname = $_POST['txt_fname'];
+		   $lname = $_POST['txt_lname'];
+		   $nic = $_POST['txt_nic'];
+		   $tp = $_POST['txt_tp'];
+		   $addr = $_POST['txt_addr'];
+		   $email = $_POST['txt_email'];
+		   $pw = $_POST['txt_pwd'];
+		 
+		   $sql = "INSERT INTO users (Id, Nic, Fname, Lname, Address, Tp, Email, Password ) VALUES ('', '$nic', '$fname', '$lname', '$addr', '$tp', '$email', '$pw')";
+		   $result = connectDb($sql);
+			
+		if($result){
+						$msg = "Successfully saved";
+						echo "<script type='text/javascript'>alert('$msg');window.location.href='../index.php';</script>";
+						
+		}
+			else{
+			
+			$msg= "Error";
+			echo "<script type='text/javascript'>alert('$msg');window.location.href='../signup.php';</script>";
+		
+			}
+			
+				
+		}
+
+
+	
 class commonFunc{
-	/* this class contains all the functions necessary to this system */
-	public static function saveUser(){
-		/* saveUser function is used to save the member details on the database */
-		/* data received from the form are assigned to variables */
-		$name = $_POST['name'];
-		$address = $_POST['address'];
-		$gender = $_POST['gender'];
-		$date = $_POST['date'];
-		$phone = $_POST['phone'];
-		$nic = $_POST['nic'];
-		$email = $_POST['email'];
-		$country = $_POST['country'];
-		$username = $_POST['username'];
-		$pass = $_POST['pass'];
-		if(isset($_POST['reading'])){
-			$reading = 1;
-		}else{
-			$reading = 0;
-		}
-		if(isset($_POST['movies'])){
-			$movies = 1;
-		}else{
-			$movies = 0;
-		}
-		if(isset($_POST['other'])){
-			$other = 1;
-		}else{
-			$other = 0;
-		}
 
-		//Image upload
+	
 
-		$file = rand(1000,100000)."-".$_FILES['photo']['name'];
-    $file_loc = $_FILES['photo']['tmp_name'];
-		$folder="photos/";
-
-		move_uploaded_file($file_loc,$folder.$file);
-
-		dbconnect::connectDb();
-		$sql = "INSERT INTO user (name, address, gender, date, phone, nic, email, country, reading, movie, other, username, password, photo) VALUES ('$name','$address', '$gender', '$date', '$phone','$nic','$email', '$country', '$reading', '$movies', '$other', '$username', '$pass', '$file');";
-		$query = mysql_query($sql) or die ("sql error");
-
-		if($query){
-		echo "Successfully saved";
-		header( "refresh:3; url=members.php" );
-		}else{
-		echo "Error";
-		header( "refresh:3; url=members.php" );
-		}
-		dbconnect::closeDb();
-	}
-
+	
 	public static function deleteUser($id){
 		/* deleteUser function is used to delete the member details on the database */
 		dbconnect::connectDb();

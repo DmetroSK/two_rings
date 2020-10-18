@@ -9,6 +9,7 @@ include 'includes/header.php';
 <?php
 include 'includes/menu.php';
 ?>
+
 <div class="banner">
 </div>
 <div class="row">

@@ -1,72 +1,84 @@
-                            .row {
-                                display: flex;
-                            }
-                            
-                            .column {
-                                flex: 50%;
-                            }
-                            /* Container */
-                            
-                            .column .container {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                padding-top: 30%;
-                            }
-                            /* Login */
-                            
-                            #div_login {
-                                width: 470px;
-                                height: 270px;
-                                margin: 0 auto;
-                            }
-                            
-                            #div_login h1 {
-                                margin-top: 0px;
-                                font-weight: normal;
-                                padding: 10px;
-                                color: black;
-                                font-family: sans-serif;
-                                text-align: center;
-                            }
-                            
-                            #div_login p {
-                                margin-top: 0px;
-                                font-weight: normal;
-                                color: gray;
-                                font-family: sans-serif;
-                                text-align: center;
-                            }
-                            
-                            input {
-                                border: 0;
-                                outline: 0;
-                                background: transparent;
-                                border-bottom: 1px solid black;
-                            }
-                            
-                            #div_login div {
-                                clear: both;
-                                margin-top: 10px;
-                                padding: 5px;
-                            }
-                            
-                            #div_login .textbox {
-                                width: 96%;
-                                padding: 7px;
-                            }
-                            
-                            #div_login input[type=button] {
-                                padding: 7px;
-                                width: 100px;
-                                background-color: black;
-                                border: 0px;
-                                color: white;
-                                border-radius: 2px;
-                            }
-                            
-                            #div_btn input {
-                                align-items: center;
-                                margin-left: 80px;
-                                margin-top: 10px;
-                            }
+* {
+    box-sizing: border-box;
+    max-height: 100vh;
+}
+
+
+/* Create two equal columns that floats next to each other */
+
+.column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+#div_signin {
+    padding-top: 30%;
+    height: 270px;
+    width: 470px;
+    margin: 0 auto;
+}
+
+#div_signin h1 {
+    font-weight: normal;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#div_signin p {
+    margin-top: 20px;
+    font-weight: normal;
+    color: gray;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input,
+textarea {
+    font-family: sans-serif;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+#div_signin div {
+    clear: both;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#div_signin .textbox {
+    width: 96%;
+    padding: 7px;
+}
+
+#div_signin input[type=submit],
+input[type=reset] {
+    padding: 7px;
+    width: 100px;
+    background-color: black;
+    border: 0px;
+    color: white;
+    border-radius: 2px;
+}
+
+.div_btn {
+    display: inline-block;
+    justify-content: center;
+    margin-left: 20%;
+}

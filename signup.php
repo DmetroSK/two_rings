@@ -1,12 +1,17 @@
 <?php
 include 'includes/header.php';
 ?>
+
 <link rel="stylesheet" href="css/signup.css">
 
 <title>Signup</title>
 
 </head>
 <body>
+
+<?php
+include 'includes/menu.php';
+?>
 
 <div class="container">
 
@@ -17,7 +22,7 @@ include 'includes/header.php';
   <div class="column">
         
 
-         <form name="user" method="post" action="" id="form">
+         <form name="user" method="post" action="database/function.php" id="form">
              <div id="div_signup">
                    
                 <h1>Signup</h1>
@@ -49,9 +54,9 @@ include 'includes/header.php';
                  
                     <div class="div_btn" style="margin-top:20px">
                         
-                        <input type="submit" value="Signup" name="but_submit" class="btn" />
+                        <input type="submit" value="Signup" name="register" class="btn" />
                         &nbsp &nbsp &nbsp
-                        <input type="reset" value="Clear" name="but_submit" class="btn" />
+                        <input type="reset" value="Clear"  class="btn" />
                     </div>
 
                  
@@ -63,22 +68,6 @@ include 'includes/header.php';
 
 </div>
 
-
-<?php
-	if(isset($_POST['Signup'])){
-
-	$sql = "INSERT INTO user ( Id, Nic, Fname, Lname, Address, Tp, Email, Password ) VALUES ('1','".$_POST['txt_fname']."','".$_POST['txt_lname']."','".$_POST['txt_nic']."'
-    ,'".$_POST['txt_tp']."','".$_POST['txt_addr']."','".$_POST['txt_email']."','".$_POST['txt_pwd']."')";
-
-	$result = mysqli_query($connection,$sql);
-	if($result)
-echo"<script> alert('Registered Sucessfully') </script>";
-else
-echo"failed";
-
-}
-
-?>
 
 </body>
 </html>
